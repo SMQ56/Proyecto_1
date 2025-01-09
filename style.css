@@ -1,0 +1,618 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #0F0F14;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121217;
+  padding: 0 1.5rem;
+  column-gap: 1.75rem;
+}
+.logos-egs {
+  display: flex;
+  gap: 20px;
+}
+.menu {
+  display: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  gap: 1em;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px 16px;
+}
+button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+}
+#iniciar {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+}
+#descargar {
+  background-color: #26bbff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+}
+#descargar > a {
+  color: black;
+}
+/* ----- */
+
+.search-bar {
+  background-color: rgb(32, 32, 36);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  width: 240px;
+  gap: 10px;
+  margin-right: 20px;
+}
+.search-bar > input {
+  background: transparent;
+  border: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.5);
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+}
+
+nav { /* En el nav no se como hacer el efecto exactamente igual que epic games, cuando hace scroll y se posiciona arriba. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  width: 100%;
+  background-color: rgb(16, 16, 20);
+  position: fixed;
+}
+/* ----- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 1600px;
+}
+
+.Ofertas_navideñas {
+  margin-top: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+}
+
+.Ofertas_navideñas > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+/* ----- */
+
+#section_main {
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  grid-template-columns: 4fr 1fr;
+  gap: 1%;
+}
+
+#desctop_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+#img-lateral {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  width: 100%;
+}
+#section_main img {
+  border-radius: 0.4em;
+  object-fit: cover;
+}
+#img1 {
+  grid-row: 1/2;
+  width: 18%;
+  margin: 1em;
+}
+#img2 {
+  grid-row: 2/3;
+  width: 18%;
+  margin: 1em;
+}
+#img3 {
+  grid-row: 3/4;
+  width: 18%;
+  margin: 1em;
+}
+#img4 {
+  grid-row: 4/5;
+  width: 18%;
+  margin: 1em;
+}
+#img5 {
+  grid-row: 5/6;
+  width: 18%;
+  margin: 1em;
+}
+#img6 {
+  grid-row: 6/7;
+  width: 18%;
+  margin: 1em;
+}
+#img-lateral > li > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-align: start;
+  width: 100%;
+  line-height: 1.2rem;
+  letter-spacing: 0.02em;
+}
+/* ----- */
+
+h2 {
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#ofertas-destacadas {
+  margin: 50px 0;
+}
+
+#ofertas-destacadas > ul {
+  display: flex;
+  padding: 2em 0;
+  justify-content: center;
+}
+.juego {
+  width: 2em;
+  line-height: 1.2em;
+}
+.juego > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.juego > p {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0.5em 0;
+}
+.juego > h3 {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+.precios {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  gap: 0.5em;
+  font-size: 0.9em;
+  padding: 1em 0;
+}
+.precios > button {
+  padding: 0.2em 0.4em;
+  border-radius: 0.75em;
+  font-weight: 500;
+  border: none;
+  background-color: #34bbff;
+}
+.precios p:nth-child(2) {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* ----- */
+
+.linea-vertical {
+  border-right: rgba(255, 255, 255, 0.25) 1px solid;
+  gap: 0;
+}
+.mas-vendidos > a,
+.mas-jugados > a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+.mas-vendidos > h2,
+.mas-jugados > h2 {
+  padding-bottom: 1em;
+}
+.mas-vendidos > a > div > h3,
+.mas-jugados > a > div > h3 {
+  font-size: medium;
+}
+.mas-vendidos > a > img,
+.mas-jugados > a > img {
+  border-radius: 5px;
+}
+.juego-gratis > p {
+  padding-top: 1em;
+  font-weight: 300;
+}
+/* ----- */
+
+.Ofertas_extra {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  margin: 50px 0;
+}
+.Ofertas_extra > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Ofertas_extra > a > div {
+  padding: 1em 0;
+}
+.Ofertas_extra > a > div > h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.Ofertas_extra > a > div > p {
+  padding: 1em 0;
+  font-size: 0.9em;
+  opacity: 50%;
+}
+/* ----- */
+
+footer {
+  background-color: #202020;
+  width: 100%;
+  font-size: 0.9em;
+}
+#social {
+  margin: 0 4em;
+  padding: 1.5em;
+  display: flex;
+  gap: 1em;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4em;
+  padding: 1.5em;
+  opacity: 75%;
+  gap: 1em;
+}
+.links > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.links > ul > p {
+  opacity: 50%;
+}
+
+.linea-horiz {
+  border-top: rgba(255, 255, 255, 0.25) 1px solid;
+  margin: 2em 5.5em;
+  display: flex;
+}
+
+.copyright {
+  margin-left: 5em;
+  padding: 1.5em;
+  width: 50%;
+  opacity: 60%;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.links2 {
+  margin: 0 4em;
+  padding: 1.5em;
+  opacity: 75%;
+  display: flex;
+  font-size: 0.9em;
+  justify-content: space-between;
+}
+
+.links2 > div {
+  display: flex;
+  gap: 1em;
+}
+
+/* ----- */
+
+header > ul > li > a:hover,
+header img:hover {
+  opacity: 50%;
+}
+
+#iniciar:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.search-bar:hover {
+  filter: brightness(2);
+}
+.navbar a:hover {
+  color: rgba(255, 255, 255);
+}
+
+#descargar:hover,
+.Ofertas_navideñas > a > img:hover,
+.Ofertas_extra > a > img:hover,
+.juego:hover {
+  /* Con este efecto los elemento se superpone al nav. No sé cómo posicionarlo correctamente. */
+  filter: brightness(1.2);
+}
+
+#img-lateral > li > a:hover,
+.mas-vendidos > a:hover,
+.mas-jugados > a:hover {
+  background-color: rgb(32, 32, 36);
+  border-radius: 8px;
+}
+
+.links2 :hover,
+.links a:hover {
+  color: #2371e0;
+}
+
+/* ----- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header ul,
+  header > img,
+  #iniciar,
+  .barS,
+  .navbar > ul li:nth-child(2),
+  .navbar > ul li:nth-child(3),
+  #desctop_img {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menuR {
+    display: flex;
+    gap: 8px;
+  }
+  .search-bar {
+    background-color: transparent;
+    margin: 0;
+    width: 0;
+  }
+  .navbar > ul {
+    display: flex;
+    justify-content: center;
+  }
+  /* -------- */
+
+  #section_main {
+    grid-template-columns: 1fr;
+    gap: 1%;
+  }
+  /* -------- */
+
+  #ofertas-destacadas > ul {
+    gap: 0.5em;
+  }
+
+  .juego > p,
+  .juego > h3,
+  .precios > button,
+  .juego-gratis > p,
+  .Ofertas_extra > a > div > p {
+    font-size: 0.5em;
+  }
+  .precios {
+    font-size: 0.4em;
+    gap: 0.5em;
+  }
+  /* -------- */
+
+  .mas-vendidos > a,
+  .mas-jugados > a {
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+  .mas-vendidos > h2,
+  .mas-jugados > h2 {
+    font-size: 1em;
+  }
+  .mas-vendidos > a > div > h3,
+  .mas-jugados > a > div > h3 {
+    font-size: 0.5em;
+  }
+  .mas-vendidos > a > img,
+  .mas-jugados > a > img {
+    width: 40%;
+  }
+  /* -------- */
+  footer,
+  .Ofertas_extra > a > div > h3 {
+    font-size: 0.75em;
+  }
+  main,
+  .navbar,
+  #social > a > img,
+  .copyright {
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header ul,
+  header > img,
+  #iniciar,
+  .barS,
+  .navbar > ul li:nth-child(2),
+  .navbar > ul li:nth-child(3),
+  #desctop_img {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menuR {
+    display: flex;
+    gap: 8px;
+  }
+  .search-bar {
+    background-color: transparent;
+    margin: 0;
+    width: 0;
+  }
+  .navbar > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  main,
+  .navbar {
+    width: 90%;
+  }
+  /* -------- */
+
+  #section_main {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    gap: 1%;
+  }
+  /* -------- */
+
+  h2 {
+    font-size: 0.75em;
+  }
+  #ofertas-destacadas > ul {
+    gap: 0.25em;
+  }
+  .juego > img {
+    border-radius: 6px;
+  }
+  .juego > p {
+    font-size: 4px;
+  }
+  .juego > h3,
+  .precios {
+    font-size: 5px;
+    line-height: 2em;
+  }
+  #ofertas-destacadas > ul > li:first-child,
+  #ofertas-destacadas > ul > li:last-child {
+    display: none;
+  }
+
+  .precios > button {
+    font-size: 1em;
+  }
+  /* -------- */
+  #mas-juegos {
+    display: flex;
+    gap: 2%;
+  }
+  .mas-vendidos > a,
+  .mas-jugados > a {
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+  .mas-vendidos > h2,
+  .mas-jugados > h2,
+  footer {
+    font-size: 0.5em;
+  }
+  .mas-vendidos > a > div > h3,
+  .mas-jugados > a > div > h3 {
+    font-size: 4px;
+    line-height: 1.5em;
+  }
+  .mas-vendidos .precios,
+  .mas-jugados .precios {
+    font-size: 2.5px;
+    line-height: 2em;
+  }
+  .mas-vendidos > a > img,
+  .mas-jugados > a > img {
+    width: 40%;
+  }
+  .juego-gratis > p,
+  .Ofertas_extra > a > div > h3,
+  .Ofertas_extra > a > div > p {
+    font-size: 4px;
+  }
+  /* -------- */
+
+  #social > a > img {
+    width: 50%;
+  }
+  #social {
+    width: 50%;
+    margin: 0 10px;
+  }
+  .copyright {
+    width: 80%;
+    margin: 0 10px;
+  }
+  .links,
+  .links2,
+  .linea-horiz {
+    margin: 0 10px;
+  }
+  .linea-horiz {
+    margin: 0 20px;
+  }
+}
