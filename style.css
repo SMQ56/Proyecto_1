@@ -93,7 +93,6 @@ a {
 }
 
 nav {
-  /* En el nav no se como hacer el efecto exactamente igual que epic games, cuando hace scroll y se posiciona arriba. */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +100,7 @@ nav {
   width: 100%;
   background-color: rgb(16, 16, 20);
   position: fixed;
+  z-index: 100000;
 }
 /* ----- */
 
@@ -398,7 +398,7 @@ header img:hover {
 .Ofertas_navideñas > a > img:hover,
 .Ofertas_extra > a > img:hover,
 .juego:hover {
-  /* Con este efecto los elemento se superpone al nav. No sé cómo posicionarlo correctamente. */
+  z-index: 1;
   filter: brightness(1.2);
 }
 
